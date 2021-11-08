@@ -1,0 +1,36 @@
+@import 'bootstrap';
+
+/* ---HEADER--- */
+
+header {
+  background-image: url(logoBackground.png);
+  background-size: cover;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.appLogo {
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+.appLogo:hover {
+  border: 5px solid #ff5757;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+/* ---HOME--- */
+.apartmentHome {
+  height: 500px;
+  display: center;
+}
