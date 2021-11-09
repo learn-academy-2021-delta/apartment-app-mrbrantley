@@ -1,10 +1,16 @@
 @import 'bootstrap';
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* ---HEADER--- */
 
 header {
   background-image: url(logoBackground.png);
   background-size: cover;
+  display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
@@ -17,6 +23,7 @@ header {
   border: 5px solid white;
   margin-left: 80px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .appLogo:hover {
@@ -26,8 +33,16 @@ header {
 .nav-bar {
   display: flex;
   align-items: flex-end;
+  justify-items: space-between;
+  padding-right: 20px;
   padding-bottom: 10px;
 }
+
+/* ---BODY--- */
+body{
+  margin-top: 170px;
+}
+
 
 /* ---HOME--- */
 .apartmentHome {

@@ -20,8 +20,10 @@ class Header extends Component {
           <img src={appLogo} alt='dwelling good logo' className='appLogo'/>
         </NavLink>
         <div className='nav-bar'>
-          <ul>
-          <Button className='nav-bar'>
+          <Button> 
+            <NavLink to="/apartmentindex" className="nav-link">See the Neighborhood</NavLink>
+          </Button>
+          <Button>
             {logged_in &&
               <a href={sign_out_route} >Sign Out</a>
             }
@@ -30,7 +32,7 @@ class Header extends Component {
               <a href={sign_in_route} >Sign In</a>
             }
           </Button> 
-          </ul>
+       
         </div>
       </header>
     )
