@@ -1,16 +1,33 @@
 import React, { Component } from "react"
+import {
+  BrowserRouter as  Router,
+  Route,
+  Routes
+} from "react-router-dom"
+
+import Home from './Pages/Home'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import ApartmentIndex from './Pages/ApartmentIndex'
 
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      apartments: []
+    }
+  }
+
   render () {
-    console.log("logged in:", this.props.logged_in)
-    console.log("user:", this.props.current_user)
-    console.log("sign up:", this.props.new_user_route)
-    console.log("sign in:", this.props.sign_in_route)
-    console.log("sign out:", this.props.sign_out_route)
     return (
-      <>
-        <h1>Hello World</h1>
-      </>
+        <Router>
+          <Header {...this.props}/>
+          <Routes>
+            <Route exact path="/" element={ <Home/> } />
+            <Route path="/apartmentindex" element={<ApartmentIndex/>} />
+          </Routes>
+          <Footer />
+        </Router>
     )
   }
 }
