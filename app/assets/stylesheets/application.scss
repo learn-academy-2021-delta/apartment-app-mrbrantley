@@ -38,6 +38,14 @@ header {
   padding-bottom: 10px;
 }
 
+/* ---FOOTER--- */
+footer {
+  background-image: url(logoBackground.png);
+  background-size: cover;
+  width: 100%;
+  bottom: 0;
+}
+
 /* ---BODY--- */
 body{
   margin-top: 170px;
@@ -47,5 +55,5 @@ body{
 /* ---HOME--- */
 .apartmentHome {
   height: 500px;
-  display: center;
+  justify-content: center;
 }

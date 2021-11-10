@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button } from 'reactstrap'
-import appLogo from '../Assets/Dwelling.png'
+import appLogo from '../Assets/Dwelling.gif'
 
 class Header extends Component {
   render () {
@@ -21,7 +21,7 @@ class Header extends Component {
         </NavLink>
         <div className='nav-bar'>
           <Button> 
-            <NavLink to="/apartmentindex" className="nav-link">See the Neighborhood</NavLink>
+            <NavLink to="/apartmentindex" className="nav-link">Listings</NavLink>
           </Button>
           <Button>
             {logged_in &&
